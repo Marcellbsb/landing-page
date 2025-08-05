@@ -11,12 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="index.html"><img src="./images/logoisothermica.png" alt="Logo Isothermica" class="logo-imagem"> </a>
+            <a href="index.html"><img src="./images/logo_iso2.png" alt="Logo Isothermica" class="logo-imagem"> </a>
             <div class="logo">Iso<span>thermica</span></div>         
             
             <nav>
@@ -34,38 +35,58 @@
 <section class="hero">
     <div class="hero-slider">
         <!-- Slide 1 -->
-        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('./images/armacell.jpg');">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('./images/armaflex_Inst.png');">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Soluções em Isolamento Térmico Industrial e Instalações Profissionais</h1>
-                    <p>Especialistas em isolamento com produtos Armacell, serviços de caldeiraria industrial, ar condicionado e dutos em MPU. Qualidade e eficiência para seu projeto.</p>
+                    <h1>Isolamento Térmico Industrial</h1>
+                    <h2>Sinônimo de eficiência e economia</h2>
+                    <p>Especialistas em isolamento térmico, trabalhamos com os melhores produtos.<br/> Sistemas de água quente e gelada<br/> Qualidade e eficiência para seu projeto.</p>
                     <a href="#contato" class="btn">Solicitar Orçamento</a>
                 </div>
             </div>
         </div>
+
+        
         
         <!-- Slide 2 -->
-        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('./images/caldeiraria.jpg');">
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(247, 247, 247, 0.2)), url('./images/instcaldeiraria.jpg');">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Caldeiraria Industrial de Alta Performance</h1>
-                    <p>Fabricamos e realizamos manutenção em caldeiras seguindo os mais rigorosos padrões de segurança e qualidade.</p>
+                    <h1>Caldeiraria Industrial</h1>
+                    <p>Caldeiraria industrial em redes de água quente e gelada.<br/>
+                    Trabalhamos com boyllers, caldeiras, aquecedores, geradores e outros.<br/>
+                     Seguimos rigorosos padrões de segurança e qualidade.</p>
                     <a href="#contato" class="btn">Fale conosco</a>
                 </div>
             </div>
         </div>
         
         <!-- Slide 3 -->
-        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('./images/dutosmpu.jpeg');">
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('./images/duct_instalation.png');">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Dutos em MPU com Excelente Vedação</h1>
-                    <p>Fabricação e instalação de dutos em Manta Polimérica Uretânica para sistemas de ventilação e exaustão.</p>
+                    <h1>Dutos em PU</h1>
+                    <h2>Praticidade, Segurança e Eficiência</h2>
+                    <p>Fabricação e instalação de dutos em PU para sistemas de ventilação e exaustão.<br/> Com foco em excelente vedação, durabilidade e segurança.</p>
                     <a href="#servicos" class="btn">Conheça Nossos Serviços</a>
                 </div>
             </div>
         </div>
+
+             <!-- Slide 4 -->
+<div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('./images/inst_isoar.png');">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Ar Condicionado</h1>
+             <h2> Instalação, limpeza e manutenção geral</h2>
+            <p>Atuamos em sistemas residenciais, comerciais e industriais.<br/> Fornecemos o diferencial que você precisa para sua casa ou seu negócio.<br/> Entre em contato com nossa equipe!</p>
+            <a href="#servicos" class="btn">Conheça Nossos Serviços</a>
+        </div>
     </div>
+</div>
+    </div>
+
+
     
     <!-- Controles do Slider -->
     <div class="slider-controls">
@@ -115,7 +136,7 @@
                     </div>
                     <div class="service-content">
                         <h3>Instalação de Ar Condicionado</h3>
-                        <p>Sistemas completos de climatização industrial e comercial, desde projetos personalizados até manutenção preventiva e corretiva.</p>
+                        <p>Sistemas completos de climatização residencial, industrial e comercial, desde projetos personalizados até manutenção preventiva e corretiva.</p>
                         <a href="#contato" class="btn">Saiba Mais</a>
                     </div>
                 </div>
@@ -140,15 +161,17 @@
         <div class="container">
             <div class="about-container">
                 <div class="about-content">
-                    <h2>Sobre a Isothermica</h2>
-                    <p>Com vasta experiência no mercado, a Isothermica se consolidou como referência em soluções térmicas e mecânicas para o setor industrial.</p>
-                    <p>Nossa equipe conta com profissionais especializados e comprometidos em oferecer projetos e serviços com excelência técnica, utilizando materiais de alta qualidade e durabilidade.</p>
-                    <p>Atuamos em todo o Distrito Federal, Goiás e regiões metropolitanas, prestando serviços para os mais diversos segmentos industriais, sempre com foco na qualidade, segurança e eficiência energética.</p>
-                    <a href="#contato" class="btn">Fale Conosco</a>
+                    <h2>O Futuro das Soluções Térmicas e Mecânicas: Isothermica</h2>
+                    <p>Embora sejamos uma empresa recém-fundada, a Isothermica é impulsionada pela vasta experiência de seus profissionais, líderes no campo de soluções térmicas e mecânicas para a indústria.</p>
+                    <p>Trazemos para o mercado uma nova perspectiva, aliada ao conhecimento técnico aprofundado de nossa equipe, para entregar projetos inovadores, serviços de alta performance e materiais de primeira linha.</p>
+                    <p>Atuamos no Distrito Federal, Goiás e regiões metropolitanas, comprometidos em impulsionar a eficiência e a segurança de diversos segmentos residenciais, comerciais e industriais.</p>
+                    
                 </div>
                 <div class="about-img">
-                    <a href="index.html"><img src="./images/logoisothermica.png" alt="Equipe Isothermica"></a>
+                    <a href="index.html"><img src="./images/logo_iso.png" alt="Equipe Isothermica"></a>
+                    
                 </div>
+                <a href="#contato" class="btn">Descubra o Diferencial Isothermica</a>
             </div>
         </div>
     </section>
@@ -166,7 +189,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">✓</div>
                     <h3>Qualidade Garantida</h3>
-                    <p>Trabalhamos em parceria com marcas de extrema qualidade para lhe oferecer o melhor em produtos e serviços.</p>
+                    <p>Trabalhamos em parceria com marcas de destaque no segmento para lhe oferecer o melhor em produtos e serviços.</p>
                 </div>
                 
                 <!-- Diferencial 2 -->
@@ -212,7 +235,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contato</h2>
-                <p>Entre em contato conosco para orçamentos ou tirar dúvidas</p>
+                <p>Dúvidas?<br/> Entre em contato!<br/> Teremos prazer em atendê-lo!</p>
             </div>
             
             <div class="contact-container">
@@ -220,8 +243,8 @@
                     <h3>Informações de Contato</h3>
                     <p><strong>Telefone:</strong> (61) 98337-1703</p>
                     <p><strong>WhatsApp:</strong> (61) 99921-3572</p>
-                    <p><strong>Email:</strong> contato@isothermica.com.br</p>
-                    <p><strong>Endereço:</strong> Samambaia N - Brasília/DF</p>
+                    <p><strong>Email:</strong>isothermicabsb@gmail.com</p>
+                    <p><strong>Endereço:</strong>Brasília/DF</p>
                     
                     <h3>Horário de Atendimento</h3>
                     <p>Segunda a Sexta: 8h às 18h</p>
@@ -230,7 +253,7 @@
                 
                 <div class="contact-form">
                     <h3>Envie sua Mensagem</h3>
-                    <form action="#" method="POST">
+                    <form action="http://localhost:5004/contact" method="POST">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Seu Nome" required>
                         </div>
@@ -266,7 +289,7 @@
             <div class="footer-container">
                 <div class="footer-col">
                     <h3>Isothermica</h3>
-                    <p>Soluções completas em isolamento térmico industrial, caldeiraria, ar condicionado e dutos em MPU.</p>
+                    <p>Soluções completas em isolamento térmico industrial, caldeiraria industrial, ar condicionado e dutos em MPU.</p>
                 </div>
                 
                 <div class="footer-col">
